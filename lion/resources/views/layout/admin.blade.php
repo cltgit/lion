@@ -37,7 +37,7 @@
 @show
 <link rel="stylesheet" href="/admins/css/my.css">
 
-<title>@yield('title')</title>
+<title>{{$title or '狂狮后台管理'}}</title>
 
 </head>
 
@@ -51,7 +51,7 @@
         
         	<!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
         	<div id="mws-logo-wrap">
-                <span style="font-size:30px;color:white">144</span>
+                <a href="/admin"><img src="/admins/images/mws-logo.png" alt="mws admin"></a>
 			</div>
         </div>
         

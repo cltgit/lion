@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/love',function(){
-	return '2222';
+/**
+ * 后台首页
+ */
+Route::get('/admin',function(){
+	return view('admin.index');
 });
